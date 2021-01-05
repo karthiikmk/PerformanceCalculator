@@ -16,6 +16,12 @@
 		25F03D5C25A44A4000D7AF72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F03D5A25A44A4000D7AF72 /* LaunchScreen.storyboard */; };
 		25F03D6725A44A4100D7AF72 /* PerformanceCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F03D6625A44A4100D7AF72 /* PerformanceCalculatorTests.swift */; };
 		25F03D7225A44A4100D7AF72 /* PerformanceCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F03D7125A44A4100D7AF72 /* PerformanceCalculatorUITests.swift */; };
+		25F03D8825A44A8800D7AF72 /* SynchronizedSemaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F03D8325A44A8800D7AF72 /* SynchronizedSemaphore.swift */; };
+		25F03D8925A44A8800D7AF72 /* SynchronizedBarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F03D8425A44A8800D7AF72 /* SynchronizedBarrier.swift */; };
+		25F03D8A25A44A8800D7AF72 /* SynchronizedOSLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F03D8525A44A8800D7AF72 /* SynchronizedOSLock.swift */; };
+		25F03D8B25A44A8800D7AF72 /* SynchronizedNSLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F03D8625A44A8800D7AF72 /* SynchronizedNSLock.swift */; };
+		25F03D8C25A44A8800D7AF72 /* SynchronizedSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F03D8725A44A8800D7AF72 /* SynchronizedSerial.swift */; };
+		25F03D9125A44AE300D7AF72 /* GCDPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F03D9025A44AE300D7AF72 /* GCDPerformanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		25F03D6D25A44A4100D7AF72 /* PerformanceCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerformanceCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F03D7125A44A4100D7AF72 /* PerformanceCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceCalculatorUITests.swift; sourceTree = "<group>"; };
 		25F03D7325A44A4100D7AF72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25F03D8325A44A8800D7AF72 /* SynchronizedSemaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedSemaphore.swift; sourceTree = "<group>"; };
+		25F03D8425A44A8800D7AF72 /* SynchronizedBarrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedBarrier.swift; sourceTree = "<group>"; };
+		25F03D8525A44A8800D7AF72 /* SynchronizedOSLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedOSLock.swift; sourceTree = "<group>"; };
+		25F03D8625A44A8800D7AF72 /* SynchronizedNSLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedNSLock.swift; sourceTree = "<group>"; };
+		25F03D8725A44A8800D7AF72 /* SynchronizedSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedSerial.swift; sourceTree = "<group>"; };
+		25F03D9025A44AE300D7AF72 /* GCDPerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDPerformanceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 		25F03D4B25A44A4000D7AF72 /* PerformanceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				25F03D8225A44A7A00D7AF72 /* GCD */,
 				25F03D4C25A44A4000D7AF72 /* AppDelegate.swift */,
 				25F03D4E25A44A4000D7AF72 /* SceneDelegate.swift */,
 				25F03D5025A44A4000D7AF72 /* ViewController.swift */,
@@ -117,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				25F03D6625A44A4100D7AF72 /* PerformanceCalculatorTests.swift */,
+				25F03D9025A44AE300D7AF72 /* GCDPerformanceTests.swift */,
 				25F03D6825A44A4100D7AF72 /* Info.plist */,
 			);
 			path = PerformanceCalculatorTests;
@@ -129,6 +143,18 @@
 				25F03D7325A44A4100D7AF72 /* Info.plist */,
 			);
 			path = PerformanceCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		25F03D8225A44A7A00D7AF72 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				25F03D8725A44A8800D7AF72 /* SynchronizedSerial.swift */,
+				25F03D8425A44A8800D7AF72 /* SynchronizedBarrier.swift */,
+				25F03D8625A44A8800D7AF72 /* SynchronizedNSLock.swift */,
+				25F03D8525A44A8800D7AF72 /* SynchronizedOSLock.swift */,
+				25F03D8325A44A8800D7AF72 /* SynchronizedSemaphore.swift */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +287,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F03D8C25A44A8800D7AF72 /* SynchronizedSerial.swift in Sources */,
 				25F03D5125A44A4000D7AF72 /* ViewController.swift in Sources */,
 				25F03D4D25A44A4000D7AF72 /* AppDelegate.swift in Sources */,
+				25F03D8825A44A8800D7AF72 /* SynchronizedSemaphore.swift in Sources */,
+				25F03D8925A44A8800D7AF72 /* SynchronizedBarrier.swift in Sources */,
 				25F03D5725A44A4000D7AF72 /* PerformanceCalculator.xcdatamodeld in Sources */,
+				25F03D8B25A44A8800D7AF72 /* SynchronizedNSLock.swift in Sources */,
+				25F03D8A25A44A8800D7AF72 /* SynchronizedOSLock.swift in Sources */,
 				25F03D4F25A44A4000D7AF72 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25F03D6725A44A4100D7AF72 /* PerformanceCalculatorTests.swift in Sources */,
+				25F03D9125A44AE300D7AF72 /* GCDPerformanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
