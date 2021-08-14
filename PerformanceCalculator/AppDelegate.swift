@@ -10,7 +10,8 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-        // This is testing comment
+        // This is testing comment to check what happens after the remote fetch 
+	// git fetch 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
 		return true
