@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AppDataSerializable",
+        "repositoryURL": "https://github.com/KarthikAwestic/AppDataSerializable.git",
+        "state": {
+          "branch": null,
+          "revision": "1580d3b1cf260e716ce135828fb1293ee7484e60",
+          "version": "1.0.3"
+        }
+      },
+      {
+        "package": "AppNetworkManager",
+        "repositoryURL": "https://github.com/KarthikAwestic/AppNetworkManager",
+        "state": {
+          "branch": null,
+          "revision": "5b8edf484233829503a2bbcfa1592d3e389aa579",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
