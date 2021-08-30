@@ -3,22 +3,4 @@
    uuid = "A1AEE722-6144-4179-B550-FCCFF3049308"
    type = "1"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "45BB9BB0-9389-440C-BDA4-378E24677543"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PerformanceCalculator/ViewController.swift"
-            startingColumnNumber = "29"
-            endingColumnNumber = "29"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "columBreakPoint()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>
