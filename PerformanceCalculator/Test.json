@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "id": "c4872f03-f0bc-4238-822f-96c35aa99e1c",
+            "eventResponseId": "a084ab05-df2f-496f-a748-dd9682d7b30d",
+            "guests": "0",
+            "count": "1",
+            "date": "2021-08-21T00:00:00.000Z"
+        },
+        {
+            "id": "c4872f03-f0bc-4238-822f-96c35aa99e1c",
+            "eventResponseId": "c0672763-2c06-4468-bd2d-bbdb48424d3a",
+            "guests": "",
+            "count": "13",
+            "date": "2021-08-21T00:00:00.000Z"
+        },
+        {
+            "id": "c4872f03-f0bc-4238-822f-96c35aa99e1c",
+            "eventResponseId": "ecc74916-0f93-4231-b3f5-cf312c8aee30",
+            "date": "2021-08-21T00:00:00.000Z",
+            "guests": null,
+            "count": "12"
+        }
+    ]
+}

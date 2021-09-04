@@ -18,6 +18,15 @@
           "revision": "5b8edf484233829503a2bbcfa1592d3e389aa579",
           "version": "1.0.1"
         }
+      },
+      {
+        "package": "OrderedDictionary",
+        "repositoryURL": "https://github.com/lukaskubanek/OrderedDictionary.git",
+        "state": {
+          "branch": null,
+          "revision": "3bac27b7a8011a76fa98cc11390df97c16ca6fae",
+          "version": "4.0.1"
+        }
       }
     ]
   },

@@ -6,9 +6,7 @@
 //
 
 import UIKit
-import CoreData
-import AuthKit
-import AuthenticationModule
+import CoreData 
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

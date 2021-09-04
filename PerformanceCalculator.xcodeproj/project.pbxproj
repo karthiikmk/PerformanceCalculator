@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25C7542526DE98800087CCF0 /* OrderedDictionary in Frameworks */ = {isa = PBXBuildFile; productRef = 25C7542426DE98800087CCF0 /* OrderedDictionary */; };
+		25C7542A26DE990C0087CCF0 /* Settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 25C7542926DE990C0087CCF0 /* Settings.json */; };
 		25D505A526D6C5F100151C61 /* AppNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 25D505A426D6C5F100151C61 /* AppNetworkManager */; };
+		25D755AB26E401F200A51214 /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 25D755AA26E401F200A51214 /* Test.json */; };
+		25D755B026E403DE00A51214 /* Has+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D755AF26E403DE00A51214 /* Has+Protocols.swift */; };
 		25F03D4D25A44A4000D7AF72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F03D4C25A44A4000D7AF72 /* AppDelegate.swift */; };
 		25F03D4F25A44A4000D7AF72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F03D4E25A44A4000D7AF72 /* SceneDelegate.swift */; };
 		25F03D5125A44A4000D7AF72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F03D5025A44A4000D7AF72 /* ViewController.swift */; };
@@ -43,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25C7542926DE990C0087CCF0 /* Settings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Settings.json; sourceTree = "<group>"; };
+		25D755AA26E401F200A51214 /* Test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
+		25D755AF26E403DE00A51214 /* Has+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Has+Protocols.swift"; sourceTree = "<group>"; };
 		25F03D4925A44A4000D7AF72 /* PerformanceCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerformanceCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F03D4C25A44A4000D7AF72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25F03D4E25A44A4000D7AF72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C7542526DE98800087CCF0 /* OrderedDictionary in Frameworks */,
 				25D505A526D6C5F100151C61 /* AppNetworkManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +140,9 @@
 				25F03D5A25A44A4000D7AF72 /* LaunchScreen.storyboard */,
 				25F03D5D25A44A4000D7AF72 /* Info.plist */,
 				25F03D5525A44A4000D7AF72 /* PerformanceCalculator.xcdatamodeld */,
+				25C7542926DE990C0087CCF0 /* Settings.json */,
+				25D755AA26E401F200A51214 /* Test.json */,
+				25D755AF26E403DE00A51214 /* Has+Protocols.swift */,
 			);
 			path = PerformanceCalculator;
 			sourceTree = "<group>";
@@ -185,6 +196,7 @@
 			name = PerformanceCalculator;
 			packageProductDependencies = (
 				25D505A426D6C5F100151C61 /* AppNetworkManager */,
+				25C7542426DE98800087CCF0 /* OrderedDictionary */,
 			);
 			productName = PerformanceCalculator;
 			productReference = 25F03D4925A44A4000D7AF72 /* PerformanceCalculator.app */;
@@ -259,6 +271,7 @@
 			mainGroup = 25F03D4025A44A4000D7AF72;
 			packageReferences = (
 				25D505A326D6C5F100151C61 /* XCRemoteSwiftPackageReference "AppNetworkManager" */,
+				25C7542326DE98800087CCF0 /* XCRemoteSwiftPackageReference "OrderedDictionary" */,
 			);
 			productRefGroup = 25F03D4A25A44A4000D7AF72 /* Products */;
 			projectDirPath = "";
@@ -277,8 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				25F03D5C25A44A4000D7AF72 /* LaunchScreen.storyboard in Resources */,
+				25C7542A26DE990C0087CCF0 /* Settings.json in Resources */,
 				25F03D5925A44A4000D7AF72 /* Assets.xcassets in Resources */,
 				25F03D5425A44A4000D7AF72 /* Main.storyboard in Resources */,
+				25D755AB26E401F200A51214 /* Test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D755B026E403DE00A51214 /* Has+Protocols.swift in Sources */,
 				25F03D8C25A44A8800D7AF72 /* SynchronizedSerial.swift in Sources */,
 				25F03D5125A44A4000D7AF72 /* ViewController.swift in Sources */,
 				25F03D4D25A44A4000D7AF72 /* AppDelegate.swift in Sources */,
@@ -641,6 +657,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		25C7542326DE98800087CCF0 /* XCRemoteSwiftPackageReference "OrderedDictionary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukaskubanek/OrderedDictionary.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
 		25D505A326D6C5F100151C61 /* XCRemoteSwiftPackageReference "AppNetworkManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/KarthikAwestic/AppNetworkManager";
@@ -652,6 +676,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		25C7542426DE98800087CCF0 /* OrderedDictionary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25C7542326DE98800087CCF0 /* XCRemoteSwiftPackageReference "OrderedDictionary" */;
+			productName = OrderedDictionary;
+		};
 		25D505A426D6C5F100151C61 /* AppNetworkManager */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 25D505A326D6C5F100151C61 /* XCRemoteSwiftPackageReference "AppNetworkManager" */;
