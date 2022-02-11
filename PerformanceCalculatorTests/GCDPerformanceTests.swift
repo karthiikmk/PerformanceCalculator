@@ -14,7 +14,7 @@ final class SynchronizedTests: XCTestCase {
 }
 
 extension SynchronizedTests {
-	
+    	
 	func testSynchronizedSerialWritePerformance() {
 		var temp = SynchronizedSerial<Int>(0)
 		
@@ -116,6 +116,41 @@ extension SynchronizedTests {
 			XCTAssertGreaterThanOrEqual(temp.value, 0)
 		}
 	}
+}
+
+extension SynchronizedTests {
+    
+    func testSynchronizedPthreadMutexWritePerformance() {
+        var temp = PthreadMutexLock<Int>(0)
+        
+        measure {
+            temp.value { $0 = 0 } // Reset
+            
+            DispatchQueue.concurrentPerform(iterations: iterations) { _ in
+                temp.value { $0 += 1 }
+            }
+            
+            XCTAssertEqual(temp.value, iterations)
+        }
+    }
+    
+    func testSynchronizedPthreadReadPerformance() {
+        var temp = PthreadMutexLock<Int>(0)
+        
+        measure {
+            temp.value { $0 = 0 } // Reset
+            
+            DispatchQueue.concurrentPerform(iterations: iterations) {
+                XCTAssertGreaterThanOrEqual(temp.value, 0)
+                
+                if $0.isMultiple(of: writeMultipleOf) {
+                    temp.value { $0 += 1 }
+                }
+            }
+            
+            XCTAssertGreaterThanOrEqual(temp.value, 0)
+        }
+    }
 }
 
 extension SynchronizedTests {

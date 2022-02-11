@@ -48,7 +48,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		// Save changes in the application's managed object context when the application transitions to the background.
 		(UIApplication.shared.delegate as? AppDelegate)?.saveContext()
 	}
-
-
 }
 
+
+extension Dictionary {
+    func mapKeys<NewKey>(_ transform: (Key) throws -> NewKey) rethrows -> [NewKey: Value] {
+        var dict = [NewKey: Value]()
+        try forEach { key, value in
+            let new = try transform(key)
+            dict[new] = value
+        }
+        return dict
+    }
+}

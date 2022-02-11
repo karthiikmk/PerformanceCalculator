@@ -1,21 +1,16 @@
 import UIKit
 import OrderedDictionary
 import AppDataSerializable
+import SwiftStandardLibraryKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var closeImage: UIImageView!
     @IBOutlet weak var msImage: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let decoder = CodableDecoder<APIArrayResponse<Event>>()
-        do {
-			let decoded = try decoder.throwableDecode(getDate("Test"))
-			debugPrint("✅ Decoded: \(decoded)")
-        } catch {
-            debugPrint(error)
-        }
     }
 
     func columBreakPoint() {
@@ -25,7 +20,6 @@ class ViewController: UIViewController {
             .map { "Tech: \($0)" }
         print(filtered)
     }
-
 
     func convertJsonToOrderedDictionary() {
         let decoder = JSONDecoder()

@@ -20,12 +20,84 @@
         }
       },
       {
+        "package": "CommonInterfacePackage",
+        "repositoryURL": "https://github.com/Adaptavant/IOS-Common-Interface.git",
+        "state": {
+          "branch": null,
+          "revision": "30a7f2c0c83b4ccf6f601acc518be6af4e78918d",
+          "version": "0.0.12"
+        }
+      },
+      {
+        "package": "CommonPackage",
+        "repositoryURL": "git@github.com:Adaptavant/IOS-Common-Kit.git",
+        "state": {
+          "branch": null,
+          "revision": "d1214fbac2a38ca9129db59a6d21ae7954b84eff",
+          "version": "1.1.35"
+        }
+      },
+      {
+        "package": "LoggerPackage",
+        "repositoryURL": "https://github.com/Adaptavant/IOS-Logger-Kit",
+        "state": {
+          "branch": null,
+          "revision": "12503412a15a6c4dda206309327f04a08938bbb2",
+          "version": "1.0.12"
+        }
+      },
+      {
+        "package": "NetworkPackage",
+        "repositoryURL": "git@github.com:Adaptavant/IOS-Network-Kit.git",
+        "state": {
+          "branch": null,
+          "revision": "e315f41ed2c2d17444a0142b9802f04488601a60",
+          "version": "1.0.30"
+        }
+      },
+      {
+        "package": "SerializationKit",
+        "repositoryURL": "https://github.com/Adaptavant/IOS-Serialization-Kit",
+        "state": {
+          "branch": null,
+          "revision": "fa984f012c5e6c010d30c1dae8697fa4ffd2cbc8",
+          "version": "1.0.15"
+        }
+      },
+      {
+        "package": "MBProgressHUD",
+        "repositoryURL": "https://github.com/jdg/MBProgressHUD.git",
+        "state": {
+          "branch": null,
+          "revision": "bca42b801100b2b3a4eda0ba8dd33d858c780b0d",
+          "version": "1.2.0"
+        }
+      },
+      {
         "package": "OrderedDictionary",
         "repositoryURL": "https://github.com/lukaskubanek/OrderedDictionary.git",
         "state": {
           "branch": null,
           "revision": "3bac27b7a8011a76fa98cc11390df97c16ca6fae",
           "version": "4.0.1"
+        }
+      },
+      {
+        "package": "PhoneNumberKit",
+        "repositoryURL": "https://github.com/marmelroy/PhoneNumberKit",
+        "state": {
+          "branch": null,
+          "revision": "1ef0431b971f69c48ca5eb4cdba07f2c5da54c35",
+          "version": "3.3.3"
+        }
+      },
+      {
+        "package": "Result",
+        "repositoryURL": "https://github.com/antitypical/Result.git",
+        "state": {
+          "branch": null,
+          "revision": "12920a5c2595926efab9274d6003e29f503dbb66",
+          "version": "5.0.0"
         }
       }
     ]

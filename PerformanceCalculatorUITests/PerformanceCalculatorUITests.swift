@@ -40,3 +40,14 @@ class PerformanceCalculatorUITests: XCTestCase {
         }
     }
 }
+
+extension Dictionary {
+    func mapKeys<NewKey>(_ transform: (Key) throws -> NewKey) rethrows -> [NewKey: Value] {
+        var newDictionary = [NewKey: Value]()
+        try forEach { key, value in
+            let new = try transform(key)
+            newDictionary[new] = value
+        }
+        return newDictionary
+    }
+}
